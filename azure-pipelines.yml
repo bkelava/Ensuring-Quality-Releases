@@ -4,7 +4,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      name: Hosted Ubuntu 2004
+      name: default
     steps:
     - task: InstallSSHKey@0
       displayName: 'Install SSH Key'
