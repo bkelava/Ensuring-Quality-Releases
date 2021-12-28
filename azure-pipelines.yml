@@ -30,7 +30,7 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
-        backendServiceArm: '$(terraformServiceConnection)'
+        backendServiceArm: 'Azure subscription 1 (cd0e3e14-48ba-42ac-b0d2-13d78472acc3)'
         backendAzureRmResourceGroupName: '$(terraformstoragerg)'
         backendAzureRmStorageAccountName: '$(terraformstorageaccount)'
         backendAzureRmContainerName: '$(terraformcontainer)'
@@ -42,7 +42,7 @@ stages:
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         commandOptions: '-auto-approve -var="public_key=$(myPubKey))"'
-        environmentServiceNameAzureRM: '$(terraformServiceConnection)'
+        environmentServiceNameAzureRM: 'kelava'
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI Web App'
       inputs:
