@@ -1,11 +1,11 @@
 name: Azure Pipelines
 variables:
 - name: TerraformBackend.ResourceGroup
- value: rg-realworld-staging-001
+  value: rg-realworld-staging-001
 - name: TerraformBackend.StorageAccount
- value: strwstagingterraform01
+  value: strwstagingterraform01
 - name: TerraformBackend.ContainerName
- value: staging
+  value: staging
 - group: 'staging'
   python.version: 3.7.6
   host: $(hostname)
