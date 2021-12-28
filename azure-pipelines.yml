@@ -18,9 +18,9 @@ stages:
           - task: InstallSSHKey@0
             displayName: Install SSH Key
             inputs:
-              knownHostsEntry: your hosts entry
-              sshPublicKey: $(myPubKey)
-              sshKeySecureFile: id_rsa
+              knownHostsEntry: #{Enter your Known Hosts Entry Here}
+              sshPublicKey: #{Enter your Public key Here}
+              sshKeySecureFile: #{Enter the name of your key in "Secure Files" Here}
           - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
             displayName: Install Terraform
             inputs:
