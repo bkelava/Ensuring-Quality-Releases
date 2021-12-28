@@ -46,7 +46,7 @@ module "appservice" {
   resource_group   = "${module.resource_group.resource_group_name}"
 }
 module "publicip" {
-  source           = "../../modules/publicip"
+  source           = "./modules/publicip"
   location         = "${var.location}"
   application_type = "${var.application_type}"
   resource_type    = "publicip"
