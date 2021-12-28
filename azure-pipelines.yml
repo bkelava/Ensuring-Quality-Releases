@@ -9,7 +9,7 @@ stages:
     - task: InstallSSHKey@0
       displayName: 'Install SSH Key'
       inputs:
-        knownHostsEntry: 'SHA256:tmXmkjNP+d9Zlg/ynnaNvgUGuCMx2BHGzjphfpgqFSA'
+        knownHostsEntry: '2048 SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8 github.com (RSA)'
         sshKeySecureFile: 'id_rsa'
     - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
       displayName: 'Terraform : azurerm'
