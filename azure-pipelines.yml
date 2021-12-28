@@ -4,7 +4,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      name: Hosted Ubuntu 1604
+      name: Hosted Ubuntu 2004
     steps:
     - task: InstallSSHKey@0
       displayName: 'Install SSH Key'
@@ -69,7 +69,7 @@ stages:
   - deployment: FakeRestAPI
     displayName: 'Deploy Web App to APP Service'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'Ubuntu-20.04'
     environment: 'TEST'
     strategy:
       runOnce:
