@@ -7,14 +7,14 @@ variables:
 - name: TerraformBackend.ContainerName
   value: staging
 - group: 'staging'
-  python.version: 3.7.6
-  host: $(hostname)
-  terraformstroagerg: $(tstate)
-  terraformstorageaccount: $(tstatestorage)
-  terraformcontainer: tstate
-  myPubKey: $(TERRAFORM_PUBLIC_KEY)
-  serviceConnection: $(serviceconnection)
-  terraformServiceConnection: $(tstateserviceconnection)
+python.version: 3.7.6
+host: $(hostname)
+terraformstroagerg: $(tstate)
+terraformstorageaccount: $(tstatestorage)
+terraformcontainer: tstate
+myPubKey: $(TERRAFORM_PUBLIC_KEY)
+serviceConnection: $(serviceconnection)
+terraformServiceConnection: $(tstateserviceconnection)
 stages:
   - stage: Build
     jobs:
