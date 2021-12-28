@@ -4,7 +4,7 @@ stages:
   jobs:
   - job: Build
     pool:
-      name: default
+      name: Azure Pipelines
     steps:
     - task: InstallSSHKey@0
       displayName: 'Install SSH Key'
