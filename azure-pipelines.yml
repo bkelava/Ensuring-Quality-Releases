@@ -42,7 +42,7 @@ stages:
         command: 'apply'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
         commandOptions: '-auto-approve -var="public_key=$(myPubKey))"'
-        environmentServiceNameAzureRM: 'kelava123'
+        environmentServiceNameAzureRM: 'kelava2'
     - task: ArchiveFiles@2
       displayName: 'Archive FakeRestAPI Web App'
       inputs:
