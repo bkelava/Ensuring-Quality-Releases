@@ -309,7 +309,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/jenny/Desktop/git/Udacity-Ensure-Quality-Releases/automatedtesting/jmeter/result.csv</stringProp>
+          <stringProp name="filename">/Users/kelava/Desktop/project/Ensuring-Quality-Releasesautomatedtesting/jmeter/result.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -579,7 +579,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/jenny/Desktop/git/Udacity-Ensure-Quality-Releases/automatedtesting/jmeter/result.csv</stringProp>
+          <stringProp name="filename">/Users/kelava/Desktop/project/Ensuring-Quality-Releasesautomatedtesting/jmeter/result.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -707,7 +707,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/jenny/Desktop/git/Udacity-Ensure-Quality-Releases/automatedtesting/jmeter/result0.csv</stringProp>
+          <stringProp name="filename">/Users/kelava/Desktop/project/Ensuring-Quality-Releasesautomatedtesting/jmeter/result0.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">

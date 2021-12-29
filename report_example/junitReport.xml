@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Starter APIs Data Validation" tests="5" time="3.725">
+  <testsuite name="Create Employee" id="b73e66fe-c952-45bb-a322-96f6d5b35c8b" timestamp="2021-12-29T20:36:08.360Z" tests="5" failures="0" errors="0" time="0.865">
+    <testcase name="Status code is 200" time="0.865" classname="StarterApIsDataValidation"/>
+    <testcase name="Successful response" time="0.865" classname="StarterApIsDataValidation"/>
+    <testcase name="Validata name equals. Expected: Jenny , Actual: Jenny" time="0.865" classname="StarterApIsDataValidation"/>
+    <testcase name="Validata salary equals. Expected: 7000 , Actual: 7000" time="0.865" classname="StarterApIsDataValidation"/>
+    <testcase name="Validata age equals. Expected: 20 , Actual: 20" time="0.865" classname="StarterApIsDataValidation"/>
+  </testsuite>
+  <testsuite name="Get an Employee by Id" id="7554563c-42d5-4b76-ae7b-1c9f423b9664" timestamp="2021-12-29T20:36:08.360Z" tests="4" failures="4" errors="0" time="0.698">
+    <testcase name="Successful response" time="0.698" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="expected '&lt;!DOCTYPE html>\n&lt;html lang=&quot;en&quot;>\n    &lt;head>\n        &lt;meta charset=&quot;utf-8&quot;>\n        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>\n\n        &lt;title>Too Many Requests&lt;/title>\n\n        &lt;!-- Fonts -->\n        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;>\n        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;>\n\n        &lt;!-- Styles -->\n        &lt;style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        &lt;/style>\n    &lt;/head>\n    &lt;body>\n        &lt;div class=&quot;flex-center position-ref full-height&quot;>\n            &lt;div class=&quot;code&quot;>\n                429            &lt;/div>\n\n            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;>\n                Too Many Requests            &lt;/div>\n        &lt;/div>\n    &lt;/body>\n&lt;/html>\n' to include 'success'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Get an Employee by Id.]]>
+        <![CDATA[Test description: Successful response.]]>
+        <![CDATA[Error message: expected '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel="dns-prefetch" href="//fonts.gstatic.com">\n        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class="flex-center position-ref full-height">\n            <div class="code">\n                429            </div>\n\n            <div class="message" style="padding: 10px;">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n' to include 'success'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel="dns-prefetch" href="//fonts.gstatic.com">\n        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class="flex-center position-ref full-height">\n            <div class="code">\n                429            </div>\n\n            <div class="message" style="padding: 10px;">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n' to include 'success'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code is 200" time="0.698" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 429">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Get an Employee by Id.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 429.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 429
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="The data should be null" time="0.698" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="Unexpected token '&lt;' at 1:1&#xA;&lt;!DOCTYPE html>&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Get an Employee by Id.]]>
+        <![CDATA[Test description: The data should be null.]]>
+        <![CDATA[Error message: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+   at Object.eval sandbox-script.js:3:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="The message should equals" time="0.698" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="Unexpected token '&lt;' at 1:1&#xA;&lt;!DOCTYPE html>&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Get an Employee by Id.]]>
+        <![CDATA[Test description: The message should equals.]]>
+        <![CDATA[Error message: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+   at Object.eval sandbox-script.js:4:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Update an Employee by Id" id="dece420d-c60a-451b-a2d3-5f60fd1e2715" timestamp="2021-12-29T20:36:08.360Z" tests="6" failures="2" errors="0" time="0.801">
+    <testcase name="Successful response" time="0.801" classname="StarterApIsDataValidation"/>
+    <testcase name="Status code is 200" time="0.801" classname="StarterApIsDataValidation"/>
+    <testcase name="Validata name equals. Expected: Jenny , Actual: Jenny" time="0.801" classname="StarterApIsDataValidation"/>
+    <testcase name="Validata salary equals. Expected: 7000 , Actual: 7000" time="0.801" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="expected 7000 to equal '7000'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Update an Employee by Id.]]>
+        <![CDATA[Test description: Validata salary equals. Expected: 7000 , Actual: 7000.]]>
+        <![CDATA[Error message: expected 7000 to equal '7000'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 7000 to equal '7000'
+   at Object.eval sandbox-script.js:4:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validata age equals. Expected: 20 , Actual: 20" time="0.801" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="expected '20' to equal 20">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Update an Employee by Id.]]>
+        <![CDATA[Test description: Validata age equals. Expected: 20 , Actual: 20.]]>
+        <![CDATA[Error message: expected '20' to equal 20.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '20' to equal 20
+   at Object.eval sandbox-script.js:5:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="The message should equals" time="0.801" classname="StarterApIsDataValidation"/>
+  </testsuite>
+  <testsuite name="Delete an Employee by Id" id="f0663dfe-e7e2-47cc-9e80-f4600b5c5855" timestamp="2021-12-29T20:36:08.360Z" tests="3" failures="3" errors="0" time="0.705">
+    <testcase name="Status code is 200" time="0.705" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 429">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Delete an Employee by Id.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 429.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 429
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response message equals" time="0.705" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="Unexpected token '&lt;' at 1:1&#xA;&lt;!DOCTYPE html>&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Delete an Employee by Id.]]>
+        <![CDATA[Test description: Response message equals.]]>
+        <![CDATA[Error message: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+   at Object.eval sandbox-script.js:2:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="The test data equals" time="0.705" classname="StarterApIsDataValidation">
+      <failure type="AssertionFailure" message="Unexpected token '&lt;' at 1:1&#xA;&lt;!DOCTYPE html>&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: e9364553-dc92-46a6-b1ab-6b293f4e4e33.]]>
+        <![CDATA[Collection name: Starter APIs Data Validation.]]>
+        <![CDATA[Request name: Delete an Employee by Id.]]>
+        <![CDATA[Test description: The test data equals.]]>
+        <![CDATA[Error message: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+   at Object.eval sandbox-script.js:3:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Get All Employees" id="177c5a98-1055-482d-9a34-56f7bdf6a31f" timestamp="2021-12-29T20:36:08.360Z" tests="2" failures="0" errors="0" time="0.656">
+    <testcase name="Status code is 200" time="0.656" classname="StarterApIsDataValidation"/>
+    <testcase name="Validata the id is not there" time="0.656" classname="StarterApIsDataValidation"/>
+  </testsuite>
+</testsuites>
