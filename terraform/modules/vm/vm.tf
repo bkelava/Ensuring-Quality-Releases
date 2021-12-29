@@ -30,9 +30,9 @@ resource "azurerm_linux_virtual_machine" "test" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = var.public_key
+    # public_key = var.public_key
     # public_key = tls_private_key.test.public_key_openssh
-    # public_key = file("/Users/jenny/.ssh/id_rsa.pub")
+    public_key = file("~/.shh/id_rsa.pub")
   }
 
   os_disk {
