@@ -6,7 +6,7 @@ tenant_id = ""
 
 # Resource Group/Location
 location = "West Europe"
-resource_group = "RG"
+resource_group = "RG-myRG"
 application_type = "EQR"
 
 # Network
