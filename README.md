@@ -31,3 +31,8 @@
 ## Selenium
 
 ![image](images/selenium_1.png)
+![image](images/selenium_2.png)
+
+## Postman
+
+![image](images/test_1.png)
