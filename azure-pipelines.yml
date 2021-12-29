@@ -10,7 +10,16 @@ stages:
       displayName: 'Install SSH Key'
       inputs:
         knownHostsEntry: 'SHA256:mdU7wqIx5scJzMcEQp5BCY9Z/R7sBDgd0pCbDmRyIIE bkelava@github.com'
-        sshKeySecureFile: 'id_rsa'
+        sshKeySecureFile: 'id_rsa'    
+    - task: AzureCLI@2
+      displayName: Azure CLI
+        inputs:
+        azureSubscription: <Name of the Azure Resource Manager service connection>
+        scriptType: ps
+        scriptLocation: inlineScript
+        inlineScript: |
+          az --version
+          az account show
     - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
       displayName: 'Terraform : azurerm'
       inputs:
