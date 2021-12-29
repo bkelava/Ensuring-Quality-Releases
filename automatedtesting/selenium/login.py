@@ -4,7 +4,6 @@ from chromedriver_py import binary_path # this will get you the path variable
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 import unittest
 
 class SwayLabs(unittest.TestCase):
@@ -16,8 +15,7 @@ class SwayLabs(unittest.TestCase):
         options.add_argument("--headless") 
         options.add_argument('--no-sandbox')
 
-        #inst.driver = webdriver.Chrome(options=options,executable_path=binary_path)
-        inst.drivert = webdriver.Chrome(ChromeDriverManager().install())
+        inst.driver = webdriver.Chrome(options=options,executable_path=binary_path)
         # inst.driver = webdriver.Chrome(options=options)
 
         # inst.driver = webdriver.Chrome(executable_path=binary_path)
