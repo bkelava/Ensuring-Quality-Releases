@@ -7,7 +7,7 @@ tenant_id = ""
 # Resource Group/Location
 location = "West Europe"
 resource_group = "RG"
-application_type = ""
+application_type = "EQR"
 
 # Network
 virtual_network_name = "privatevnet"
