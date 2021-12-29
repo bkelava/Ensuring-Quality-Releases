@@ -66,7 +66,7 @@ stages:
 - stage: Deploy
   jobs:
   - deployment: FakeRestAPI
-    displayName: 'Deploy Web App to APP Service'
+    displayName: 'Deploy Web App'
     pool:
       vmImage: 'Ubuntu-20.04'
     environment: 'TEST'
@@ -78,7 +78,7 @@ stages:
             displayName: 'Deploy CodingAPP to App Service'
             inputs:
               azureSubscription: 'Azure subscription 1 (cd0e3e14-48ba-42ac-b0d2-13d78472acc3)'
-              appName: 'codingapp-appservice'
+              appName: 'AppServiceKelava'
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
   - deployment: VMDeploy
@@ -86,7 +86,6 @@ stages:
     environment:
       name:  'DEV'
       resourceType: VirtualMachine
-      tags: 'codingapp'
     strategy:
       runOnce:
         deploy:
@@ -95,17 +94,30 @@ stages:
             inputs:
               targetType: 'inline'
               script: |
-                #! /bin/bash           
+                #! /bin/bash
+                
                 sudo apt-get upgrade -y
-                sudo apt-get install unzip -y
-                sudo apt-get install python3  -y
-                sudo apt-get update -y
                 sudo apt-get install python3-pip -y
+                sudo apt-get install unzip -y
                 sudo apt-get install -y chromium-browser
-                pip3 --version
                 pip3 install selenium
-                pip3 install --upgrade pip
-                export PATH=$PATH:'usr/bin'   
+                
+                # download chrome driver
+                FILE=chromedriver_linux64.zip
+                if [ -f "$FILE" ]; then
+                  echo "$FILE exists."
+                else
+                  wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+                fi
+                # install chrome driver
+                unzip chromedriver_linux64.zip
+                sudo mv chromedriver /usr/bin/chromedriver
+                sudo chown root:root /usr/bin/chromedriver
+                sudo chmod +x /usr/bin/chromedriver
+                chromium-browser -version
+                chromedriver --version
+                # agent log analytics
+                wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w dbf2bd83-6d47-436b-a499-a2b566def8fe -s MuSR8Ti5MMi0E+9+1NM4NxCxFqJcfLzuGD0EtGhjXo3Vhy/THcSdCf1WyQnkXafD+6DiFjiOAEfJiQh6EbZVeg== -d opinsights.azure.com
           - task: ExtractFiles@1
             displayName: 'Copy Selenium Archive to VM'
             inputs:
