@@ -1,17 +1,12 @@
 provider "azurerm" {
-  tenant_id       = "${var.tenant_id}"
-  subscription_id = "${var.subscription_id}"
-  client_id       = "${var.client_id}"
-  client_secret   = "${var.client_secret}"
   features {}
 }
 terraform {
   backend "azurerm" {
-    resource_group_name  = "RG"
-    storage_account_name = "terraformkelava"
-    container_name       = "blobkelava"
-    key                  = "terraform.tfstate"
-    access_key           = "Gfj6FZruvABgi8rSPjo3DKzYKzBKdmjdyX8HrHzPw97RWvw27SOlqVfLc6OXJsIZC98cxF32Vp89NaXvgVlAtg=="
+    storage_account_name = ""
+    container_name       = ""
+    key                  = ""
+    access_key           = ""
   }
 }
 module "resource_group" {
