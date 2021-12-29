@@ -6,7 +6,7 @@ tenant_id = ""
 
 # Resource Group/Location
 location = "West Europe"
-resource_group = ""
+resource_group = "RG"
 application_type = ""
 
 # Network
