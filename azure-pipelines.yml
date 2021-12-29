@@ -84,7 +84,7 @@ stages:
   - deployment: VMDeploy
     displayName: 'Deploy Virtual Machine'
     environment:
-      name:  'DEV'
+      name:  'TEST'
       resourceType: VirtualMachine
       tags: 'appservices' 
     strategy:
