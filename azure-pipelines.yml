@@ -75,7 +75,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Deploy CodingAPP to App Service'
+            displayName: 'Deploy App Service'
             inputs:
               azureSubscription: 'Azure subscription 1 (cd0e3e14-48ba-42ac-b0d2-13d78472acc3)'
               appName: 'EQRkelava-AppService'
@@ -86,6 +86,7 @@ stages:
     environment:
       name:  'DEV'
       resourceType: VirtualMachine
+      tags: 'appservices' 
     strategy:
       runOnce:
         deploy:
@@ -100,7 +101,7 @@ stages:
                 sudo apt-get install python3-pip -y
                 sudo apt-get install unzip -y
                 sudo apt-get install -y chromium-browser
-                pip3 install selenium
+                pip3 install selaenium
                 
                 # download chrome driver
                 FILE=chromedriver_linux64.zip
