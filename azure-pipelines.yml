@@ -15,7 +15,7 @@ stages:
       displayName: Azure CLI
       inputs:
         azureSubscription: 'Azure subscription 1 (cd0e3e14-48ba-42ac-b0d2-13d78472acc3)'
-        scriptType: ps
+        scriptType: sh
         scriptLocation: inlineScript
         inlineScript: |
           az --version
