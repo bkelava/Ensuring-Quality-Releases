@@ -7,10 +7,11 @@ provider "azurerm" {
 }
 terraform {
   backend "azurerm" {
-    storage_account_name = ""
-    container_name       = ""
-    key                  = ""
-    access_key           = ""
+    resource_group_name  = "RG"
+    storage_account_name = "terraformkelava"
+    container_name       = "blobkelava"
+    key                  = "terraform.tfstate"
+    #access_key           = ""
   }
 }
 module "resource_group" {
