@@ -11,7 +11,7 @@ terraform {
     storage_account_name = "terraformkelava"
     container_name       = "blobkelava"
     key                  = "terraform.tfstate"
-    #access_key           = ""
+    access_key           = "Gfj6FZruvABgi8rSPjo3DKzYKzBKdmjdyX8HrHzPw97RWvw27SOlqVfLc6OXJsIZC98cxF32Vp89NaXvgVlAtg=="
   }
 }
 module "resource_group" {
