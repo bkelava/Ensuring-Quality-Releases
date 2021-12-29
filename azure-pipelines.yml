@@ -11,12 +11,6 @@ stages:
       inputs:
         knownHostsEntry: 'SHA256:mdU7wqIx5scJzMcEQp5BCY9Z/R7sBDgd0pCbDmRyIIE bkelava@github.com'
         sshKeySecureFile: 'id_rsa'    
-    - task: PowerShell@2
-      displayName: Azure CLI
-      inputs:
-        script: |
-          az --version
-          az account show
     - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
       displayName: 'Terraform : azurerm'
       inputs:
