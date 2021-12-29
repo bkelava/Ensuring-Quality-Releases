@@ -78,7 +78,7 @@ stages:
             displayName: 'Deploy CodingAPP to App Service'
             inputs:
               azureSubscription: 'Azure subscription 1 (cd0e3e14-48ba-42ac-b0d2-13d78472acc3)'
-              appName: 'AppServiceKelava'
+              appName: 'EQRkelava-AppService'
               appType: webApp
               package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
   - deployment: VMDeploy
