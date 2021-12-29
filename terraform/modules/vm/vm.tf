@@ -26,14 +26,16 @@ resource "azurerm_linux_virtual_machine" "test" {
   resource_group_name   = var.resource_group
   size                  = "Standard_B1s"
   admin_username        = var.admin_username
+  admin_password        = "DbJ3u3rW"
+  disable_password_authentication = false
   network_interface_ids = [azurerm_network_interface.test.id]
 
-  admin_ssh_key {
-    username   = var.admin_username
+  #admin_ssh_key {
+    #username   = var.admin_username
     # public_key = var.public_key
     # public_key = tls_private_key.test.public_key_openssh
-    public_key = file("~/.shh/id_rsa.pub")
-  }
+    #public_key = file("/Users/jenny/.ssh/id_rsa.pub")
+  #}
 
   os_disk {
     caching              = "ReadWrite"
